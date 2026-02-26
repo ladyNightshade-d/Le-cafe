@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image:url("Images/coff.png");
+            background-size: cover;
+            color:white;
+            font-size:2rem;
+        }
+        h1{
+            text-align: center;
+            font-weight:bold;
+            text-shadow: 2px 2px 4px rgba(165, 93, 93, 0.5);
+            margin-bottom: 30px;
+        }
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* pushes everything to the right */
+  padding: 20px 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(203, 118, 118);
+  font-weight: bold;
+  font-size:2rem;
+  transition: color 0.9s ease;
+}
+/* add after existing styles */
+@media (max-width: 768px) {
+    body { font-size: 1.5rem; padding: 10px; }
+    .navbar { padding: 10px 20px; }
+    .nav-links { gap: 15px; }
+    .nav-links a { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+    body { font-size: 1rem; padding: 8px; }
+    .navbar { flex-direction: column; padding: 10px; }
+    .nav-links { gap: 10px; flex-direction: column; }
+    .nav-links a { font-size: 1rem; }
+}
+
+/* about text styling */
+.about-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    font-size: 2rem;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+    <li><a href="about.html">Our story</a></li>
+    <li><a href="contact.html">Visit us</a></li>
+    <li><a href="order.html">Order Online</a></li>
+  </ul>
+</nav>
+    <h1>About Us</h1>
+    <p class="about-text">A Place to Slow Down, Savor, and Connect.</p>
+
+At Le Café, we believe coffee is more than a drink — it’s an experience.
+From carefully selected beans to handcrafted beverages, every cup is made with passion and precision.
+
+Whether you're meeting friends, studying, or simply enjoying a quiet moment, Le Café is your perfect escape.</p>
+<section class="why-choose">
+  <h2>🌸 Why Choose Le Café ?</h2>
+  <ul>
+    <li>✨ Premium quality ingredients</li>
+    <li>✨ Cozy and aesthetic atmosphere</li>
+    <li>✨ Friendly service</li>
+    <li>✨ Free Wi-Fi for work & study</li>
+  </ul>
+</section>
+</body>
+</html>

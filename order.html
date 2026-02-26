@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image:url("Images/order.jpg");
+        background-size: cover;
+        color:white;
+        font-size:2rem;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color:rgb(175, 91, 91);
+        font-weight: bold;
+        font-size:2rem;
+        transition: color 0.9s ease;
+    }
+
+    .order-title {
+        font-size: 2.5rem;
+        color: #ffd700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+        color: #ff6b6b;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .tagline {
+        font-size: 1.8rem;
+        color: #87ceeb;
+        font-style: italic;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .order-form {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 40px auto;
+        border: 2px solid #ffd700;
+    }
+
+    .order-form h2 {
+        color: #ffd700;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        color: white;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .form-group button {
+        background-color: #ff6b6b;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .form-group button:hover {
+        background-color: #ff5252;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+        body {
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+        
+        .order-title {
+            font-size: 1.8rem;
+        }
+        
+        .section-heading {
+            font-size: 1.3rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+        }
+        
+        .navbar {
+            padding: 10px 20px;
+        }
+        
+        .nav-links {
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            font-size: 1.2rem;
+        }
+        
+        .order-form {
+            max-width: 90%;
+            padding: 20px;
+        }
+        
+        .order-form h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            font-size: 1rem;
+            padding: 8px;
+        }
+        
+        .order-title {
+            font-size: 1.5rem;
+        }
+        
+        .section-heading {
+            font-size: 1.1rem;
+        }
+        
+        .tagline {
+            font-size: 1rem;
+        }
+        
+        .navbar {
+            flex-direction: column;
+            padding: 10px;
+        }
+        
+        .nav-links {
+            gap: 10px;
+            flex-direction: column;
+        }
+        
+        .nav-links a {
+            font-size: 1rem;
+        }
+        
+        .form-group label {
+            font-size: 0.9rem;
+        }
+        
+        .form-group button {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+        <nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+    <li><a href="about.html">Our story</a></li>
+    <li><a href="contact.html">Visit us</a></li>
+    <li><a href="order.html">Order Online</a></li>
+  </ul>
+</nav>
+
+    <p>
+<span class="order-title">☕ Order Your Favorites Online</span><br>
+Craving your perfect cup? Skip the line and order from the comfort of your home.<br>
+Freshly brewed coffee and warm pastries are just a click away.<br><br>
+
+<span class="section-heading">🥐 Made Fresh, Just for You</span><br>
+Every drink and bite is prepared with care and premium ingredients.<br>
+From classic lattes to seasonal specials, we've got something for every craving.<br>
+Whether it's your morning pick-me-up or an afternoon treat, we've got you covered.<br><br>
+
+<span class="section-heading">🚀 Fast & Easy Pickup</span><br>
+Place your order online and have it ready when you arrive.<br>
+No waiting, just deliciousness on the go.<br><br>
+
+<span class="section-heading">🏡 Delivery Available</span><br>
+Enjoy the cozy taste of Le Café wherever you are.<br><br>
+
+<span class="tagline">✨ Simple. Quick. Delicious.</span>
+    </p>
+
+    <div class="order-form">
+      <h2>📝 Place Your Order</h2>
+      <form action="https://formspree.io/f/mvzblwvg" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="order">What would you like to order?</label>
+          <textarea id="order" name="order" placeholder="Tell us your order..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="special">Special Requests:</label>
+          <textarea id="special" name="special" placeholder="Any dietary restrictions or special requests?"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit Order</button>
+        </div>
+      </form>
+    </div>
+    
+</body>
+</html>

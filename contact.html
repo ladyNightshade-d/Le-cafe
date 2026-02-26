@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image:url("Images/mocha.png");
+            background-size: cover;
+            color:white;
+            font-size:2rem;
+        }
+
+        .navbar {
+  display: flex;
+  justify-content: flex-end; /* pushes everything to the right */
+  padding: 20px 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(203, 118, 118);
+  font-weight: bold;
+  font-size:2rem;
+  transition: color 0.9s ease;
+}
+/* add after existing styles */
+@media (max-width: 768px) {
+    body { font-size: 1.5rem; padding: 10px; }
+    .navbar { padding: 10px 20px; }
+    .nav-links { gap: 15px; }
+    .nav-links a { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+    body { font-size: 1rem; padding: 8px; }
+    .navbar { flex-direction: column; padding: 10px; }
+    .nav-links { gap: 10px; flex-direction: column; }
+    .nav-links a { font-size: 1rem; }
+}
+    </style>
+</head>
+<body>
+        <nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+    <li><a href="about.html">Our story</a></li>
+    <li><a href="contact.html">Visit us</a></li>
+    <li><a href="order.html">Order Online</a></li>
+  </ul>
+</nav>
+
+    <section>
+  <h1> Ready for Your Perfect Cup?</h1>
+  <p>We’d love to hear from you! Whether it’s a question about our menu, a cozy spot for studying, or just to share your love for coffee, we’re here to help. ✨
+
+Drop us a message, give us a call, or visit us in person — a warm smile and your favorite cup awaits.
+
+Stay connected for updates, specials, and cozy vibes straight from our café. 🌿💛
+
+Let’s make every visit a memorable one!</p>
+
+      <h2>Contact Us</h2>
+    <p>📞 Phone: (123) 456-7890</p>
+    <p>📧 Email: info@lecafe.com</p>
+    <p>📍 Address: 123 Coffee Lane, Brewtown</p>
+    <p>⏰ Hours: Mon-Fri 7am - 7pm | Sat-Sun 8am - 8pm</p>
+    <p>Follow us on social media for the latest updates and cozy vibes! 🌿💛</p>
+    <p>Instagram: @lecafe | Facebook: Le Café | Twitter: @lecafe</p>
+    <p >Visit our website for more information and updates!</p>
+
+</section>
+</body>
+</html>

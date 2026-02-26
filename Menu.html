@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body, h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-image: url("Images/cof.png");
+            background-size: cover;
+            color:white;
+            font-size:2rem;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 50px;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(175, 91, 91);
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: color 0.9s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .menu-images {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .menu-images img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+
+            .navbar {
+                padding: 10px 20px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .nav-links a {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            .navbar {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .nav-links {
+                gap: 10px;
+                flex-direction: column;
+            }
+
+            .nav-links a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+    <li><a href="about.html">Our story</a></li>
+    <li><a href="contact.html">Visit us</a></li>
+    <li><a href="order.html">Order Online</a></li>
+  </ul>
+</nav>
+    <h1>Our Menu</h1>
+    <div class="menu-images">
+        <img src="Images/menu.png" alt="Menu Image">
+        <img src="Images/coo.png" alt="Menu Image">
+    </div>
+    
+</body>
+</html>
